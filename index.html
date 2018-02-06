@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Title -->
+	    <title>Pixel Art Maker!</title>
+	    <!-- JQuery && Bootstrap -->
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	    <!-- Style -->
+	    <link rel="stylesheet" href="css/styles.css">
+	    <link href="css/bootstrap-colorpicker.css" rel="stylesheet">
+	    <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+	    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	</head>
+	<body>
+	    <h1><strong>Pixel Art Maker</strong></h1>
+	    <form id="sizePicker">
+	        <h3>Grid size</h3>
+	        <div class="container">
+	            <div class="row justify-content-md-center">
+	                <div class="col col-lg-2">
+	                    <div class="input-group input-group-sm mb-3">
+	                        <div class="input-group-prepend">
+	                            <span class="input-group-text" id="inputGroup-sizing-sm">Grid Height</span>
+	                        </div>
+	                        <input id="gridHeight" type="number" min="1" class="form-control" aria-label="Grid Height" aria-describedby="inputGroup-sizing-sm">
+	                    </div>
+	                </div>
+	                <div class="col col-lg-2">
+	                    <div class="input-group input-group-sm mb-3">
+	                        <div class="input-group-prepend">
+	                            <span class="input-group-text" id="inputGroup-sizing-sm">Grid Width</span>
+	                        </div>
+	                        <input id="gridWidth" type="number" min="1" class="form-control" aria-label="Grid Width" aria-describedby="inputGroup-sizing-sm">
+	                    </div>
+	                </div>
+	                <div class="col col-lg-2">
+	                    <button id="gridButton" type="button" class="btn btn-primary">Build</button>
+	                </div>
+	            </div>
+	        </div>
+	    </form>
+	    <div id="drawSection">
+	        <h3>Pick A Color</h3>
+	        <div class="container">
+	            <div class="row justify-content-md-center">
+	                <div class="col col-lg-2">
+	                    <div class="input-group input-group-sm mb-3">
+	                        <div id="cp2" class="input-group colorpicker-component" title="Using input value">
+	                            <input id="colorPicker" type="text" class="form-control input-lg" value="#DD0F20" />
+	                            <div class="input-group-prepend">
+	                                <span class="input-group-addon input-group-text"><i></i></span>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</body>
+	<footer>
+		<!-- JS -->
+	    <script src="js/main.js"></script>
+	    <script src="js/bootstrap-colorpicker.js"></script>
+	</footer>
+</html>
